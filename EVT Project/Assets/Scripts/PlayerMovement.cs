@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour {
             desp = -0.5f;
 			StartCoroutine ("Desplazamiento");
         }
-        if (transform.parent == ev && Input.GetKey(KeyCode.W)) 
+        if (transform.parent == ev && Input.GetKeyDown(KeyCode.W)) 
 		{
             desp = 0.5f;
 			StartCoroutine ("Desplazamiento");
