@@ -516,6 +516,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ev: {fileID: 1715271040}
   desp: 0
+  inMovement: 0
 --- !u!4 &1715271040 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4032091161515172, guid: 5b2b3b803b4b93d4cb7b43edf42992f3,
@@ -796,8 +797,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 9.194262, z: 1.0776536}
+  m_Center: {x: 0, y: 1.0470195, z: 0.038826823}
 --- !u!33 &2052520815
 MeshFilter:
   m_ObjectHideFlags: 0

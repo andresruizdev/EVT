@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Elevador : MonoBehaviour {
 	public Transform ascensor;
+    public static int pisos = 15, ult_piso;
 	void OnTriggerEnter(Collider other)
 	{
 		if (other.tag == "Player") 
