@@ -21,14 +21,14 @@ public class PlayerMovement : MonoBehaviour {
 		}
 
         // Subida y Bajada del Elevador
-		if (transform.parent == ev && Input.GetKeyDown(KeyCode.S) && Elevador.pisos > 0) 
+		if (transform.parent == ev && Input.GetKeyDown(KeyCode.S) && Elevador.pisos > 0 && !inMovement) 
 		{
             desp = -0.1f;
 			StartCoroutine ("Desplazamiento");
             Elevador.pisos--;
             print(Elevador.pisos);
         }
-        if (transform.parent == ev && Input.GetKeyDown(KeyCode.W) && Elevador.pisos < 15) 
+        if (transform.parent == ev && Input.GetKeyDown(KeyCode.W) && Elevador.pisos < 15 && !inMovement) 
 		{
             desp = 0.1f;
 			StartCoroutine ("Desplazamiento");
