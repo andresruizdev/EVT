@@ -1,5 +1,10 @@
 fileFormatVersion: 2
 guid: 1f46a36059f83f74396c72083a85af59
+labels:
+- Camera
+- CameraC
+- CameraScripts
+- Scripts
 timeCreated: 1505649994
 licenseType: Pro
 MonoImporter:

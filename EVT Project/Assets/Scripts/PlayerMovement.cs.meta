@@ -1,5 +1,11 @@
 fileFormatVersion: 2
 guid: b25f712aa07c62c4ebe5ea20849112a7
+labels:
+- Movement
+- PMovement
+- Player
+- PlayerMove
+- PlayerMovement
 timeCreated: 1502899087
 licenseType: Pro
 MonoImporter:

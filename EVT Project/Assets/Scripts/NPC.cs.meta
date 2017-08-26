@@ -1,5 +1,9 @@
 fileFormatVersion: 2
 guid: d6824853c7671e74abb7604cb0066dbd
+labels:
+- Citizen
+- Enemy
+- Npc
 timeCreated: 1503672713
 licenseType: Free
 MonoImporter:
