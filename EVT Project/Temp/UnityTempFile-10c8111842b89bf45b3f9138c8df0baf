@@ -101,6 +101,7 @@
 -define:ENABLE_VSTU
 Assets/Scripts/CameraFunction.cs
 Assets/Scripts/Elevador.cs
+Assets/Scripts/NPC.cs
 Assets/Scripts/PlayerMovement.cs
 -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Runtime.Serialization.dll"
 -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.Linq.dll"

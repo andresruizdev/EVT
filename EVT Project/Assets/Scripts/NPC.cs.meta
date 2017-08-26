@@ -1,12 +1,11 @@
 fileFormatVersion: 2
-guid: 1f46a36059f83f74396c72083a85af59
+guid: d6824853c7671e74abb7604cb0066dbd
 labels:
-- Camera
-- CameraC
-- CameraScripts
-- Scripts
-timeCreated: 1505649994
-licenseType: Pro
+- Citizen
+- Enemy
+- Npc
+timeCreated: 1503672713
+licenseType: Free
 MonoImporter:
   serializedVersion: 2
   defaultReferences: []
