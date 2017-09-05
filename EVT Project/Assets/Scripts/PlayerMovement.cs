@@ -26,38 +26,67 @@ public class PlayerMovement : MonoBehaviour {
 		}
 
 		// Subida y bajada del Ascensor
-		if (transform.parent == ev && Input.GetKeyDown(KeyCode.S) && !inMovement && Elevador.pisos > 0) 
+		if (transform.parent == ev && Input.GetKeyDown(KeyCode.DownArrow) && !inMovement && Elevador.pisos > 0) 
 		{
 			Elevador.pisos--;
 			print (Elevador.pisos);
             desp = -0.1f;
 			StartCoroutine ("Desplazamiento");
         }
-        if (transform.parent == ev && Input.GetKeyDown(KeyCode.W) && !inMovement && Elevador.pisos < 15) 
+        if (transform.parent == ev && Input.GetKeyDown(KeyCode.UpArrow) && !inMovement && Elevador.pisos < 15) 
 		{
 			Elevador.pisos++;
 			print (Elevador.pisos);
             desp = 0.1f;
 			StartCoroutine ("Desplazamiento");
         }
+
+		if (Input.GetKeyDown(KeyCode.Q))
+		{
+			desp = 0.5f;
+			StartCoroutine ("Rotation");
+		}
+		if (Input.GetKeyDown (KeyCode.E)) 
+		{
+			desp = -0.5f;
+			StartCoroutine ("Rotation");
+		}
     }
 
 	//Corutina para el dezplazamiento del Ascensor
-    public IEnumerator Desplazamiento()
+	public IEnumerator Desplazamiento()
 	{
 		inMovement = true;
-		for (int i = 0; i < 50; i++) {
+		for (int i = 0; i < 50; i++) 
+		{
 			Transition ();
 			yield return new WaitForSeconds (0.01f);
 		}
 		inMovement = false;
-        
-    }
+
+	}
+
+	public IEnumerator Rotation()
+	{
+		inMovement = true;
+		for (int i = 0; i < 90; i++) 
+		{
+			Rotate();
+			yield return new WaitForSeconds (0.01f);
+		}
+		inMovement = false;
+
+	}
 
 	// Cantidad de Transición durante cada repetición de la Corrutina
 	public void Transition()
 	{
 		ev.transform.position += new Vector3(0, desp, 0);
+	}
+
+	void Rotate()
+	{
+		transform.eulerAngles += new Vector3(0f,desp*2,0f);
 	}
 
 }
