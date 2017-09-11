@@ -5,12 +5,11 @@ using UnityEngine;
 public class Elevador : MonoBehaviour {
 	public Transform ascensor;
 	public float desp;
-	bool inMovement = false;
+    bool inMovement = false;
 	public static int pisos = 15, ult_piso;
 
-
-	// Volver al Personaje Hijo del Ascensor tras detectar que comienza a colisionar con la plataforma
-	void OnTriggerEnter(Collider other)
+    // Volver al Personaje Hijo del Ascensor tras detectar que comienza a colisionar con la plataforma
+    void OnTriggerEnter(Collider other)
 	{
 		if (other.tag == "Player") 
 		{
