@@ -6,8 +6,8 @@ public class NPC : MonoBehaviour {
     public int typeSelector;
     struct NPCStruct
     {
-        int healt;
-        float speed;
+        public int healt;
+        public float speed;
     }
 
     enum NPCType
@@ -23,6 +23,7 @@ public class NPC : MonoBehaviour {
 
         typeSelector = Random.Range(0,5);
         NPCType npcType = new NPCType();
+        NPCStruct npcChar = new NPCStruct();
         switch (typeSelector)
         {
             case 1:
@@ -42,18 +43,24 @@ public class NPC : MonoBehaviour {
         if (npcType == NPCType.enemy1)
         {
             gameObject.GetComponent<Renderer>().material.color = Color.red;
+            npcChar.healt = 150;
         }
         if (npcType == NPCType.enemy2)
         {
             gameObject.GetComponent<Renderer>().material.color = Color.yellow;
+            npcChar.healt = 120;
         }
         if (npcType == NPCType.girl)
         {
             gameObject.GetComponent<Renderer>().material.color = Color.magenta;
+            npcChar.healt = 90;
         }
         if (npcType == NPCType.boy)
         {
             gameObject.GetComponent<Renderer>().material.color = Color.cyan;
+            npcChar.healt = 100;
         }
+        print("Type: " + npcType);
+        print("Health: " + npcChar.healt);
     }
 }
