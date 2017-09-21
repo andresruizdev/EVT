@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour {
+public class PlayerMovement : MonoBehaviour
+{
 	public static float speed = 0.2f;
     public Transform ev;
     public float desp = 0;
@@ -18,11 +19,11 @@ public class PlayerMovement : MonoBehaviour {
 		//Movimiento de Izquierda a Derecha
 		if(Input.GetKey(KeyCode.A) && !inMovement)
 		{
-			transform.position -= transform.right * speed;
+			rb.MovePosition(transform.position - transform.right * speed);
 		}
 		if (Input.GetKey (KeyCode.D) && !inMovement) 
 		{
-			transform.position += transform.right * speed;
+			rb.MovePosition(transform.position + transform.right * speed);
 		}
 
 		// Subida y bajada del Ascensor
@@ -41,12 +42,12 @@ public class PlayerMovement : MonoBehaviour {
 			StartCoroutine ("Desplazamiento");
         }
 
-		if (Input.GetKeyDown(KeyCode.Q))
+		if (Input.GetKeyDown(KeyCode.Q) && !inMovement)
 		{
 			desp = 0.5f;
 			StartCoroutine ("Rotation");
 		}
-		if (Input.GetKeyDown (KeyCode.E)) 
+		if (Input.GetKeyDown (KeyCode.E) && !inMovement) 
 		{
 			desp = -0.5f;
 			StartCoroutine ("Rotation");

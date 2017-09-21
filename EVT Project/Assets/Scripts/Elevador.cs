@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Elevador : MonoBehaviour {
+public class Elevador : MonoBehaviour
+{
 	public Transform ascensor;
 	public float desp;
     bool inMovement = false;

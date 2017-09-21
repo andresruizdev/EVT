@@ -2,15 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NPC : MonoBehaviour {
+public class NPC : MonoBehaviour
+{
     public int typeSelector;
     struct NPCStruct
     {
-        public int healt;
-        public float speed;
+        int healt;
+        float speed;
     }
 
-    enum NPCType
+    public enum NPCType
     {
         enemy1,
         enemy2,
@@ -20,47 +21,41 @@ public class NPC : MonoBehaviour {
 
     public void Start()
     {
+        Selector();
+    }
 
-        typeSelector = Random.Range(0,5);
+    void Selector()
+    {
+        typeSelector = Random.Range(0, 4);
         NPCType npcType = new NPCType();
-        NPCStruct npcChar = new NPCStruct();
         switch (typeSelector)
         {
-            case 1:
+            case 0:
                 npcType = NPCType.enemy1;
+                gameObject.GetComponent<Renderer>().material.color = Color.red;
+                break;
+            case 1:
+                npcType = NPCType.enemy2;
+                gameObject.GetComponent<Renderer>().material.color = Color.yellow;
                 break;
             case 2:
-                npcType = NPCType.enemy2;
+                npcType = NPCType.boy;
+                gameObject.GetComponent<Renderer>().material.color = Color.cyan;
+                gameObject.tag = "Boy";
                 break;
             case 3:
-                npcType = NPCType.boy;
-                break;
-            case 4:
                 npcType = NPCType.girl;
+                gameObject.GetComponent<Renderer>().material.color = Color.magenta;
+                gameObject.tag = "Girl";
                 break;
         }
+    }
 
-        if (npcType == NPCType.enemy1)
+    void VerifySalvation()
+    {
+        if ((gameObject.tag == "Boy" || gameObject.tag == "Girl") && GetComponent<Renderer>().material.color == Color.green)
         {
-            gameObject.GetComponent<Renderer>().material.color = Color.red;
-            npcChar.healt = 150;
+            
         }
-        if (npcType == NPCType.enemy2)
-        {
-            gameObject.GetComponent<Renderer>().material.color = Color.yellow;
-            npcChar.healt = 120;
-        }
-        if (npcType == NPCType.girl)
-        {
-            gameObject.GetComponent<Renderer>().material.color = Color.magenta;
-            npcChar.healt = 90;
-        }
-        if (npcType == NPCType.boy)
-        {
-            gameObject.GetComponent<Renderer>().material.color = Color.cyan;
-            npcChar.healt = 100;
-        }
-        print("Type: " + npcType);
-        print("Health: " + npcChar.healt);
     }
 }
