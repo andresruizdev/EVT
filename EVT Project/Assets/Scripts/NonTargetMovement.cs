@@ -5,37 +5,30 @@ using UnityEngine;
 public class NonTargetMovement : MonoBehaviour {
     public Vector3 nonTarget;
     int i = 0;
+    float time = 10f;
     float desp = 0.5f, speed = 0.5f;
     void Start()
     {
-        nonTarget = new Vector3(desp, 0, 0);
-        StartCoroutine("Escape");
+        Invoke("LeftMovement", 0.5f);
     }
-	void Update ()
-    {
-        if (i == 0)
-        {
-            transform.position += transform.right * speed;
-        }
-        if (i == 1)
-        {
-            transform.position -= transform.right * speed;
-        }
-        
-	}
 
-    IEnumerator Escape()
+    void RightMovement()
     {
-        if (i == 0)
-        {
-            i++;
-        }
-        if (i == 1)
-        {
-            i--;
-        }
-        StartCoroutine("Escape");
-        yield return new WaitForSeconds(5f);
-        
+        transform.position = new Vector3(20, 80, 16);
+        Invoke("LeftMovement", 10f);
     }
+
+    void DiagonalMovement()
+    {
+        transform.position = new Vector3(1.8f, 80, 40);
+        Invoke("RightMovement", 10f);
+    }
+
+    void LeftMovement()
+    {
+        transform.position = new Vector3(-20, 80, 16);
+        Invoke("DiagonalMovement", 20f);
+    }
+
+
 }

@@ -17,7 +17,7 @@ public class NPCNavMesh : MonoBehaviour {
     void Start()
     {
         InvokeRepeating("FollowTarget",0f, updateDelay);
-        target = null;
+        target = nonTarget;
     }
 
     void FollowTarget()
@@ -37,7 +37,7 @@ public class NPCNavMesh : MonoBehaviour {
     {
         if (other.tag == "Player")
         {
-            target = null;
+            target = nonTarget;
         }
     }
 
