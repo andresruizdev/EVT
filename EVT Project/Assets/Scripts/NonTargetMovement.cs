@@ -3,13 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class NonTargetMovement : MonoBehaviour {
-    public Vector3 nonTarget;
     int i = 0;
     float time = 10f;
     float desp = 0.5f, speed = 0.5f;
     void Start()
     {
-        Invoke("LeftMovement", 0.5f);
+        if (gameObject.tag == "Target")
+        {
+            Invoke("LeftMovement", 1f);
+        }
+        if (gameObject.tag == "Target1")
+        {
+            Invoke("RightMovement", 0.1f);
+        }
+        
     }
 
     void RightMovement()

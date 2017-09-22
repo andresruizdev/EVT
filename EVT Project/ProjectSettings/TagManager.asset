@@ -9,6 +9,8 @@ TagManager:
   - Piso
   - Boy
   - Girl
+  - Target1
+  - Target
   layers:
   - Default
   - TransparentFX

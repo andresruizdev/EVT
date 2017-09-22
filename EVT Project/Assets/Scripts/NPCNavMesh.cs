@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class NPCNavMesh : MonoBehaviour {
 
-    [SerializeField] Transform target, nonTarget;
+    [SerializeField] Transform target, nonTarget, cTarget1, cTarget2;
     [SerializeField] NavMeshAgent npc;
     [SerializeField] float updateDelay = .3f;
 
@@ -14,10 +14,14 @@ public class NPCNavMesh : MonoBehaviour {
         npc = GetComponent<NavMeshAgent>();
     }
 
+    void Update()
+    {
+        
+    }
     void Start()
     {
+        SetTarget();
         InvokeRepeating("FollowTarget",0f, updateDelay);
-        target = nonTarget;
     }
 
     void FollowTarget()
@@ -37,7 +41,20 @@ public class NPCNavMesh : MonoBehaviour {
     {
         if (other.tag == "Player")
         {
-            target = nonTarget;
+            SetTarget();
+        }
+    }
+
+    void SetTarget()
+    {
+        if (gameObject.tag == "Boy" || gameObject.tag == "girl")
+        {
+            target = cTarget1;
+        }
+
+        if (gameObject.tag == "NPC")
+        {
+            target = cTarget2;
         }
     }
 

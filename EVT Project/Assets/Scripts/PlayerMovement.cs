@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
 	}
 	void Update () 
 	{
+        print(inMovement);
 		//Movimiento de Izquierda a Derecha
 		if(Input.GetKey(KeyCode.A) && !inMovement)
 		{
@@ -75,7 +76,8 @@ public class PlayerMovement : MonoBehaviour
 			Rotate();
 			yield return new WaitForSeconds (0.01f);
 		}
-		inMovement = false;
+        inMovement = false;
+        print("Entrando");
 
 	}
 
