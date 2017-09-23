@@ -6,6 +6,7 @@ public class NonTargetMovement : MonoBehaviour {
     int i = 0;
     float time = 10f;
     float desp = 0.5f, speed = 0.5f;
+    int nextTarget;
     void Start()
     {
         if (gameObject.tag == "Target")
@@ -20,7 +21,7 @@ public class NonTargetMovement : MonoBehaviour {
         {
             Invoke("Esquina1", 2f);
         }
-        if (gameObject.tag == "Targer3")
+        if (gameObject.tag == "Target3")
         {
             Invoke("Esquina2", 3f);
         }
@@ -29,32 +30,42 @@ public class NonTargetMovement : MonoBehaviour {
 
     void RightMovement()
     {
+        nextTarget = Random.Range(0, 1);
         transform.position = new Vector3(20, 80, 16);
-        Invoke("DiagonalMovement", 10f);
+        Invoke("Esquina1", 5f);
+        print(gameObject.name + " method: RightMovement");
     }
 
     void DiagonalMovement()
     {
+        nextTarget = Random.Range(0, 1);
         transform.position = new Vector3(1.8f, 80, 40);
-        Invoke("LeftMovement", 10f);
+        Invoke("Esquina2", 5f);
+        print(gameObject.name + " method: DiagonalMovement");
     }
 
     void LeftMovement()
     {
+        nextTarget = Random.Range(0, 1);
         transform.position = new Vector3(-20, 80, 16);
-        Invoke("Esquina2", 20f);
+        Invoke("DiagonalMovement", 15f);
+        print(gameObject.name + " method: LeftMovement");
     }
 
     void Esquina1()
     {
+        nextTarget = Random.Range(0, 1);
         transform.position = new Vector3(-17, 80, 16);
-        Invoke("RightMovement", 20f);
+        Invoke("LeftMovement", 5f);
+        print(gameObject.name + " method: Esquina1");
     }
 
     void Esquina2()
     {
-        transform.position = new Vector3(-15, 80, 16);
-        Invoke("Esquina1", 10f);
+        nextTarget = Random.Range(0, 1);
+        transform.position = new Vector3(15, 80, 16);
+        Invoke("RightMovement", 5f);
+        print(gameObject.name + " method: Esquina2");
     }
 
 
