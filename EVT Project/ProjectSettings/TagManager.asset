@@ -11,6 +11,8 @@ TagManager:
   - Girl
   - Target1
   - Target
+  - Target3
+  - Target2
   layers:
   - Default
   - TransparentFX
