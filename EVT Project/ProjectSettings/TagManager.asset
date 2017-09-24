@@ -15,6 +15,7 @@ TagManager:
   - Target2
   - SavedNPC
   - ConvertedNPC
+  - ColorStore
   layers:
   - Default
   - TransparentFX
