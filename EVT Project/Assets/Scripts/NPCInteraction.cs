@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class NPCInteraction : MonoBehaviour
 {
-
     void OnTriggerStay(Collider other)
     {
         if (other.tag == "NPC" && GetComponent<Renderer>().material.color == other.GetComponent<Renderer>().material.color)
@@ -17,9 +16,10 @@ public class NPCInteraction : MonoBehaviour
             }
         }
 
-        if ((other.tag == "Girl" || other.tag == "Boy") && GetComponent<Renderer>().material.color == other.GetComponent<Renderer>().material.color)
+        if ((other.tag == "Girl" || other.tag == "Boy" || other.tag == "ConvertedNPC") && GetComponent<Renderer>().material.color == other.GetComponent<Renderer>().material.color)
         {
             other.GetComponent<Renderer>().material.color = Color.green;
+            other.gameObject.tag = "SavedNPC";
         }
     }
     

@@ -33,7 +33,6 @@ public class NonTargetMovement : MonoBehaviour {
         nextTarget = Random.Range(0, 1);
         transform.position = new Vector3(20, 80, 16);
         Invoke("Esquina1", 5f);
-        print(gameObject.name + " method: RightMovement");
     }
 
     void DiagonalMovement()
@@ -41,7 +40,6 @@ public class NonTargetMovement : MonoBehaviour {
         nextTarget = Random.Range(0, 1);
         transform.position = new Vector3(1.8f, 80, 40);
         Invoke("Esquina2", 5f);
-        print(gameObject.name + " method: DiagonalMovement");
     }
 
     void LeftMovement()
@@ -49,7 +47,6 @@ public class NonTargetMovement : MonoBehaviour {
         nextTarget = Random.Range(0, 1);
         transform.position = new Vector3(-20, 80, 16);
         Invoke("DiagonalMovement", 15f);
-        print(gameObject.name + " method: LeftMovement");
     }
 
     void Esquina1()
@@ -57,7 +54,6 @@ public class NonTargetMovement : MonoBehaviour {
         nextTarget = Random.Range(0, 1);
         transform.position = new Vector3(-17, 80, 16);
         Invoke("LeftMovement", 5f);
-        print(gameObject.name + " method: Esquina1");
     }
 
     void Esquina2()
@@ -65,8 +61,5 @@ public class NonTargetMovement : MonoBehaviour {
         nextTarget = Random.Range(0, 1);
         transform.position = new Vector3(15, 80, 16);
         Invoke("RightMovement", 5f);
-        print(gameObject.name + " method: Esquina2");
     }
-
-
 }

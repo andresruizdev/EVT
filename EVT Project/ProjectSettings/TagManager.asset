@@ -13,6 +13,8 @@ TagManager:
   - Target
   - Target3
   - Target2
+  - SavedNPC
+  - ConvertedNPC
   layers:
   - Default
   - TransparentFX

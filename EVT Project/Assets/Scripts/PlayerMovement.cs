@@ -16,7 +16,6 @@ public class PlayerMovement : MonoBehaviour
 	}
 	void Update () 
 	{
-        print(inMovement);
 		//Movimiento de Izquierda a Derecha
 		if(Input.GetKey(KeyCode.A) && !inMovement)
 		{

@@ -5,11 +5,8 @@ using UnityEngine;
 public class NPC : MonoBehaviour
 {
     public int typeSelector;
-    struct NPCStruct
-    {
-        int healt;
-        float speed;
-    }
+    public int enemyConverter;
+    [SerializeField] GameObject particle;
 
     public enum NPCType
     {
@@ -22,6 +19,7 @@ public class NPC : MonoBehaviour
     public void Start()
     {
         Selector();
+        Stats.health = 100;
     }
 
     void Selector()
@@ -42,20 +40,29 @@ public class NPC : MonoBehaviour
                 npcType = NPCType.boy;
                 gameObject.GetComponent<Renderer>().material.color = Color.cyan;
                 gameObject.tag = "Boy";
+                enemyConverter = Random.Range(25, 150);
                 break;
             case 3:
                 npcType = NPCType.girl;
                 gameObject.GetComponent<Renderer>().material.color = Color.magenta;
                 gameObject.tag = "Girl";
+                enemyConverter = Random.Range(20, 130);
                 break;
         }
     }
 
-    void VerifySalvation()
+    private void OnTriggerEnter(Collider other)
     {
-        if ((gameObject.tag == "Boy" || gameObject.tag == "Girl") && GetComponent<Renderer>().material.color == Color.green)
+        if (other.tag == "NPC" && (gameObject.tag == "Boy" || gameObject.tag == "Girl"))
         {
-            
+            enemyConverter--;
+            //print(gameObject.name + ": " + enemyConverter);
+            // Hacer que los Enemigos puedan convertir a los Ciudadanos en enemigos
+            if (enemyConverter <= 0)
+            {
+                gameObject.tag = "ConvertedNPC";
+                gameObject.GetComponent<Renderer>().material.color = Color.blue;
+            }
         }
     }
 }

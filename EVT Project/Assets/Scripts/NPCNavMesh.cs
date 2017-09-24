@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class NPCNavMesh : MonoBehaviour {
 
-    [SerializeField] Transform target, nonTarget, cTarget1, cTarget2, cTarget3, cTarget4;
+    [SerializeField] Transform target, nonTarget, cTarget1, cTarget2, cTarget3, cTarget4, player;
     [SerializeField] NavMeshAgent npc;
     [SerializeField] float updateDelay = .3f;
 
@@ -16,7 +16,7 @@ public class NPCNavMesh : MonoBehaviour {
 
     void Update()
     {
-        
+        ColorVerification();   
     }
     void Start()
     {
@@ -31,10 +31,10 @@ public class NPCNavMesh : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player" && gameObject.tag == "NPC")
+        if (other.tag == "Player" && (gameObject.tag == "NPC" || gameObject.tag == "ConvertedNPC"))
         {
             target = other.transform;
-        }
+        }  
     }
 
     void OnTriggerExit(Collider other)
@@ -54,7 +54,7 @@ public class NPCNavMesh : MonoBehaviour {
             {
                 target = cTarget1;
             }
-            if (number == 1)
+            else if (number == 1)
             {
                 target = cTarget3;
             }
@@ -67,11 +67,31 @@ public class NPCNavMesh : MonoBehaviour {
             {
                 target = cTarget2;
             }
-            if (num == 1)
+            else if (num == 1)
             {
                 target = cTarget4;
             }
         }
+    }
+
+    void ColorVerification()
+    {
+        if (GetComponent<Renderer>().material.color == Color.green)
+        {
+            target = player;
+            LessScale();
+        }
+    }
+
+    void LessScale()
+    {
+        gameObject.transform.localScale -= new Vector3(.006f, .006f, .006f);
+        Invoke("Deactive", 2f);
+    }
+
+    void Deactive()
+    {
+        gameObject.SetActive(false);
     }
 
 }
