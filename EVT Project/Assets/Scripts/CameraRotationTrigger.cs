@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraRotationTrigger : MonoBehaviour {
 	public float desp;
 	bool movimiento;
-	public GameObject camera, player;
+	public GameObject theCamera, player;
 	public static int rotateID = 1;
 
 
@@ -40,6 +40,6 @@ public class CameraRotationTrigger : MonoBehaviour {
 	void Rotation()
 	{
 		print ("Rotacion");
-		camera.transform.eulerAngles += new Vector3(0f,desp,0f);
+		theCamera.transform.eulerAngles += new Vector3(0f,desp,0f);
 	}
 }

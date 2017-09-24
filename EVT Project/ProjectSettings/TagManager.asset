@@ -3,7 +3,19 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Plataforma
+  - NPC
+  - Piso
+  - Boy
+  - Girl
+  - Target1
+  - Target
+  - Target3
+  - Target2
+  - SavedNPC
+  - ConvertedNPC
+  - ColorStore
   layers:
   - Default
   - TransparentFX
