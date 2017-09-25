@@ -17,50 +17,11 @@ public class PlayerMovement : MonoBehaviour
 	}
 	void Update () 
 	{
-		//Movimiento de Izquierda a Derecha
-		if(Input.GetKey(KeyCode.A) && !inMovement)
-		{
-			rb.MovePosition(transform.position - transform.right * speed);
-		}
-		if (Input.GetKey (KeyCode.D) && !inMovement) 
-		{
-			rb.MovePosition(transform.position + transform.right * speed);
-		}
-
-		// Subida y bajada del Ascensor
-		if (transform.parent == ev && Input.GetKeyDown(KeyCode.DownArrow) && !inMovement && Elevador.pisos > 0) 
-		{
-			Elevador.pisos--;
-			print (Elevador.pisos);
-            desp = -0.1f;
-			StartCoroutine ("Desplazamiento");
-            if (Elevador.pisos == 0 && NPCNavMesh.npcNumbers == 0)
-            {
-                inMovement = true;
-                win.SetActive(true);
-            }
-        }
-        if (transform.parent == ev && Input.GetKeyDown(KeyCode.UpArrow) && !inMovement && Elevador.pisos < 15) 
-		{
-			Elevador.pisos++;
-			print (Elevador.pisos);
-            desp = 0.1f;
-			StartCoroutine ("Desplazamiento");
-        }
-
-		if (Input.GetKeyDown(KeyCode.Q) && !inMovement)
-		{
-			desp = 0.5f;
-			StartCoroutine ("Rotation");
-		}
-		if (Input.GetKeyDown (KeyCode.E) && !inMovement) 
-		{
-			desp = -0.5f;
-			StartCoroutine ("Rotation");
-		}
+        PlayerMovementControls();
+        ElevatorMovement();
     }
 
-	//Corutina para el dezplazamiento del Ascensor
+	//Corrutina para el dezplazamiento del Ascensor
 	public IEnumerator Desplazamiento()
 	{
 		inMovement = true;
@@ -73,6 +34,7 @@ public class PlayerMovement : MonoBehaviour
 
 	}
 
+    //Corutina para la rotacion del personaje
 	public IEnumerator Rotation()
 	{
 		inMovement = true;
@@ -92,9 +54,59 @@ public class PlayerMovement : MonoBehaviour
 		ev.transform.position += new Vector3(0, desp, 0);
 	}
 
+    // Cantidad de rotacion por cada repeticion de la Corrutina
 	void Rotate()
 	{
 		transform.eulerAngles += new Vector3(0f,desp*2,0f);
 	}
+
+    void PlayerMovementControls()
+    {
+        //Movimiento de Izquierda a Derecha
+        if (Input.GetKey(KeyCode.A) && !inMovement)
+        {
+            rb.MovePosition(transform.position - transform.right * speed);
+        }
+        if (Input.GetKey(KeyCode.D) && !inMovement)
+        {
+            rb.MovePosition(transform.position + transform.right * speed);
+        }
+
+        // Movimiento de rotacion
+        if (Input.GetKeyDown(KeyCode.Q) && !inMovement)
+        {
+            desp = 0.5f;
+            StartCoroutine("Rotation");
+        }
+        if (Input.GetKeyDown(KeyCode.E) && !inMovement)
+        {
+            desp = -0.5f;
+            StartCoroutine("Rotation");
+        }
+    }
+
+    void ElevatorMovement()
+    {
+        // Subida y bajada del Ascensor
+        if (transform.parent == ev && Input.GetKeyDown(KeyCode.DownArrow) && !inMovement && Elevador.pisos > 0)
+        {
+            Elevador.pisos--;
+            print(Elevador.pisos);
+            desp = -0.1f;
+            StartCoroutine("Desplazamiento");
+            if (Elevador.pisos == 0 && NPCNavMesh.npcNumbers == 0)
+            {
+                inMovement = true;
+                win.SetActive(true);
+            }
+        }
+        if (transform.parent == ev && Input.GetKeyDown(KeyCode.UpArrow) && !inMovement && Elevador.pisos < 15)
+        {
+            Elevador.pisos++;
+            print(Elevador.pisos);
+            desp = 0.1f;
+            StartCoroutine("Desplazamiento");
+        }
+    }
 
 }

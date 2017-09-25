@@ -17,20 +17,10 @@ public class PlayerMech : MonoBehaviour {
     {
         BagColorsUI1();
         BagColorsUI2();
-        
-        print(colorBag[0]);
-        print(colorBag[1]);
-        if (Input.GetKeyDown(KeyCode.LeftAlt) && bagPosition == 0)
-        {
-            bagPosition++;
-            ChangingColor();
-        }
-        else if (Input.GetKeyDown(KeyCode.LeftAlt) && bagPosition == 1)
-        {
-            bagPosition--;
-            ChangingColor();
-        }
+        BagControls();
     }
+
+    //Asigna el color que hay en la posicion principal de la mochila al piso
     void OnTriggerStay(Collider other)
 	{
 		if (other.tag == "Piso" && Input.GetKey(KeyCode.Space)) 
@@ -40,7 +30,7 @@ public class PlayerMech : MonoBehaviour {
 	}
 
     void SetColorPower()
-    {
+    {// De manera Aleatoria, selecciona los colores que van a aparecer en el principio
         int colorPackage = Random.Range(0,3);
         if (colorPackage == 0)
         {
@@ -67,7 +57,7 @@ public class PlayerMech : MonoBehaviour {
     }
 
     void BagColorsUI1()
-    {
+    { // Cambia el color del icono que refloja el color principal que hay en la mochila
         if (colorBag[0] == Color.blue)
         {
             bagColor.GetComponent<Image>().color = Color.blue;
@@ -91,7 +81,7 @@ public class PlayerMech : MonoBehaviour {
     }
 
     void BagColorsUI2()
-    {
+    {// Cambia el color del icono que refleja el color secundario que hay en la mochila
         if (colorBag[1] == Color.blue)
         {
             bagColor1.GetComponent<Image>().color = Color.blue;
@@ -114,10 +104,24 @@ public class PlayerMech : MonoBehaviour {
         }
     }
 
-    void ChangingColor()
+    void ChangingColor() // Contiene la funcion para cambiar el color primario por el secundaro y viceversa
     {
         Color aux = colorBag[0];
         colorBag[0] = colorBag[1];
         colorBag[1] = aux;
+    }
+
+    void BagControls() // Contiene los controles para cambiar los colores en las casillas de la mochila 
+    {
+        if (Input.GetKeyDown(KeyCode.LeftShift) && bagPosition == 0)
+        {
+            bagPosition++;
+            ChangingColor();
+        }
+        else if (Input.GetKeyDown(KeyCode.LeftShift) && bagPosition == 1)
+        {
+            bagPosition--;
+            ChangingColor();
+        }
     }
 }

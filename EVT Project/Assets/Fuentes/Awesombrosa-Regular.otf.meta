@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 75fa982ceb0d9454b9e3d550e696a84b
+timeCreated: 1506317269
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: La Awesombrosa
+  fontNames:
+  - La Awesombrosa
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

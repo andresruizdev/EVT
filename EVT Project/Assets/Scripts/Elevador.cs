@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class Elevador : MonoBehaviour
 {
     public GameObject blurPanel;
-    public Button blue, red, yellow, cyan, magenta;
 	public Transform ascensor;
 	public float desp;
     bool inMovement = false;
@@ -21,6 +20,7 @@ public class Elevador : MonoBehaviour
 		}
 	}
 
+    // Activa el Menú de selección de Colores, Si se presiona control se activa, si se deja de presionar se desactiva
     private void OnTriggerStay(Collider other)
     {
         if (other.tag == "Player")
@@ -47,7 +47,7 @@ public class Elevador : MonoBehaviour
 		}
 	}
 
-	//Corutina para el dezplazamiento del Ascensor
+	//Corrutina para el dezplazamiento del Ascensor
 	public IEnumerator Desplazamiento()
 	{
 		

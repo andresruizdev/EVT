@@ -3,31 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class NonTargetMovement : MonoBehaviour {
-    int i = 0;
-    float time = 10f;
-    float desp = 0.5f, speed = 0.5f;
     int nextTarget;
     void Start()
     {
-        if (gameObject.tag == "Target")
-        {
-            Invoke("LeftMovement", 1f);
-        }
-        if (gameObject.tag == "Target1")
-        {
-            Invoke("RightMovement", 0.1f);
-        }
-        if (gameObject.tag == "Target2")
-        {
-            Invoke("Esquina1", 2f);
-        }
-        if (gameObject.tag == "Target3")
-        {
-            Invoke("Esquina2", 3f);
-        }
-        
+        CondicionalTarget(); // Se llama el metodo que se explica a continuacion
     }
-
+    //Se Definen las coordenadas para los NPC (En total son 5 Puntos predeterminados que van cambiando que se veran reflejados en los siguientes metodos)
     void RightMovement()
     {
         nextTarget = Random.Range(0, 1);
@@ -61,5 +42,25 @@ public class NonTargetMovement : MonoBehaviour {
         nextTarget = Random.Range(0, 1);
         transform.position = new Vector3(15, 80, 16);
         Invoke("RightMovement", 5f);
+    }
+
+    void CondicionalTarget()
+    { // Se tiene esta condicional para seleccionar entre distintos puntos de seguimiento para los NPC
+        if (gameObject.tag == "Target")
+        {
+            Invoke("LeftMovement", 1f);
+        }
+        else if (gameObject.tag == "Target1")
+        {
+            Invoke("RightMovement", 0.1f);
+        }
+        else if (gameObject.tag == "Target2")
+        {
+            Invoke("Esquina1", 2f);
+        }
+        else if (gameObject.tag == "Target3")
+        {
+            Invoke("Esquina2", 3f);
+        }
     }
 }

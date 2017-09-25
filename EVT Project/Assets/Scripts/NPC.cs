@@ -6,8 +6,7 @@ public class NPC : MonoBehaviour
 {
     public int typeSelector;
     public int enemyConverter;
-    [SerializeField] GameObject particle;
-
+    // Se Define la estructura de los tipos de NPC
     public enum NPCType
     {
         enemy1,
@@ -18,15 +17,15 @@ public class NPC : MonoBehaviour
 
     public void Start()
     {
-        Selector();
+        Selector(); // Se llama desde el Start al Selector del tipo de NPC
     }
 
     void Selector()
     {
-        typeSelector = Random.Range(0, 4);
+        typeSelector = Random.Range(0, 4); // De manera aleatoria saca un indice que servira para dar formato al NPC
         NPCType npcType = new NPCType();
         switch (typeSelector)
-        {
+        {// Cada NPC tendrá diferentes caracteristicas de acuerdo con el indice obtenido en el typeSelector
             case 0:
                 npcType = NPCType.enemy1;
                 gameObject.GetComponent<Renderer>().material.color = Color.red;
@@ -50,13 +49,12 @@ public class NPC : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
+        // Los Enemigos pueden Convertir a los Ciudadanos en Enemigos, estos tienen diferentes caracteristicas, reflejadas a continuacion
         if (other.tag == "NPC" && (gameObject.tag == "Boy" || gameObject.tag == "Girl"))
         {
             enemyConverter--;
-            //print(gameObject.name + ": " + enemyConverter);
-            // Hacer que los Enemigos puedan convertir a los Ciudadanos en enemigos
             if (enemyConverter <= 0)
             {
                 gameObject.tag = "ConvertedNPC";

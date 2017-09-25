@@ -43,7 +43,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -86,7 +86,8 @@ LightmapSettings:
     m_PVRFilteringAtrousColorSigma: 1
     m_PVRFilteringAtrousNormalSigma: 1
     m_PVRFilteringAtrousPositionSigma: 1
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000166, guid: 43cc7cfe2a73fd7498c27b8d740868fa,
+    type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
@@ -404,6 +405,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -533,6 +538,8 @@ RectTransform:
   - {fileID: 1192048941}
   - {fileID: 1277503363}
   - {fileID: 480846304}
+  - {fileID: 1791773581}
+  - {fileID: 837309105}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -592,6 +599,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -640,6 +651,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -700,6 +715,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -758,6 +777,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -811,6 +834,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -1181,6 +1208,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -1358,6 +1389,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b48e54fba33dbd74da8d612b4e5a04cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &108378333 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: ffe615445aad2d84d99cc90180f0b55a, type: 3}
+  m_PrefabInternal: {fileID: 394875411}
+--- !u!65 &108378334
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 108378333}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.160808, y: 1.160808, z: 0.657672}
+  m_Center: {x: 0, y: 0, z: 0.335412}
 --- !u!1 &108749539
 GameObject:
   m_ObjectHideFlags: 0
@@ -1506,6 +1553,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -1925,7 +1976,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 153883549}
   m_LocalRotation: {x: 0.122654475, y: -0.33909407, z: 0.044642568, w: 0.9316535}
-  m_LocalPosition: {x: 54, y: 94.6, z: -59.3}
+  m_LocalPosition: {x: 67.4, y: 36, z: -59.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2257,19 +2308,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
+    m_Font: {fileID: 12800000, guid: 9f093a168ab29e14dbc7d98a8fa1ccb1, type: 3}
+    m_FontSize: 12
+    m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -2277,7 +2328,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Amarillo
+  m_Text: A m a r i l l o
 --- !u!222 &174373987
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2435,6 +2486,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -2708,6 +2763,21 @@ Prefab:
       propertyPath: m_Size.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 837309104}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 1633352078}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: Type
+      value: 
+      objectReference: {fileID: 318915617}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
   m_IsPrefabParent: 0
@@ -2802,6 +2872,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -2855,6 +2929,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -2914,6 +2992,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -3024,6 +3106,21 @@ Prefab:
       propertyPath: m_Size.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 837309104}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 1633352078}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: Type
+      value: 
+      objectReference: {fileID: 318915617}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
   m_IsPrefabParent: 0
@@ -3110,6 +3207,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -3260,6 +3361,21 @@ Prefab:
       propertyPath: m_Size.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 837309104}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 1633352078}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: Type
+      value: 
+      objectReference: {fileID: 318915617}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
   m_IsPrefabParent: 0
@@ -3407,6 +3523,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -3616,6 +3736,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -3767,6 +3891,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -4041,9 +4169,122 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &282278421
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 282278423}
+  - component: {fileID: 282278422}
+  m_Layer: 0
+  m_Name: Audio Source
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &282278422
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 282278421}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 55bef01719e58e4499796d9b6a06b880, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!4 &282278423
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 282278421}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 563.5, y: 220, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &288284656 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -4375,6 +4616,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -4382,6 +4627,80 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_PrefabInternal: {fileID: 1258988425}
+--- !u!1 &318915615
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 318915616}
+  - component: {fileID: 318915618}
+  - component: {fileID: 318915617}
+  m_Layer: 5
+  m_Name: Type
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &318915616
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 318915615}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1782429979}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: -36.08}
+  m_SizeDelta: {x: 195.6, y: 59.199997}
+  m_Pivot: {x: 0.5, y: 0}
+--- !u!114 &318915617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 318915615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Enemy
+--- !u!222 &318915618
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 318915615}
 --- !u!1 &319539761
 GameObject:
   m_ObjectHideFlags: 0
@@ -4466,6 +4785,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -4635,6 +4958,21 @@ Prefab:
       propertyPath: m_Size.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 837309104}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 1633352078}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: Type
+      value: 
+      objectReference: {fileID: 318915617}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
   m_IsPrefabParent: 0
@@ -4688,6 +5026,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -4865,6 +5207,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -4918,6 +5264,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -5203,6 +5553,21 @@ Prefab:
       propertyPath: m_Size.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 837309104}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 1633352078}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: Type
+      value: 
+      objectReference: {fileID: 318915617}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
   m_IsPrefabParent: 0
@@ -5393,6 +5758,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -5749,6 +6118,21 @@ Prefab:
       propertyPath: m_Size.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 837309104}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 1633352078}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: Type
+      value: 
+      objectReference: {fileID: 318915617}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
   m_IsPrefabParent: 0
@@ -5863,6 +6247,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -6209,6 +6597,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -6262,6 +6654,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -6668,7 +7064,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1826479433}
+  - {fileID: 1174778578}
   - {fileID: 604825075}
   m_Father: {fileID: 33612598}
   m_RootOrder: 4
@@ -6762,6 +7158,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -6815,6 +7215,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -6878,6 +7282,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -7044,6 +7452,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -7270,6 +7682,21 @@ Prefab:
       propertyPath: m_Size.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 837309104}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 1633352078}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: Type
+      value: 
+      objectReference: {fileID: 318915617}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
   m_IsPrefabParent: 0
@@ -7369,6 +7796,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -7535,6 +7966,21 @@ Prefab:
       propertyPath: m_Size.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 837309104}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 1633352078}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: Type
+      value: 
+      objectReference: {fileID: 318915617}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
   m_IsPrefabParent: 0
@@ -7656,6 +8102,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -7747,6 +8197,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -7801,6 +8255,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -7854,6 +8312,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -7916,6 +8378,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -8208,6 +8674,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -8261,6 +8731,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -8384,6 +8858,21 @@ Prefab:
       propertyPath: m_Size.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 837309104}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 1633352078}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: Type
+      value: 
+      objectReference: {fileID: 318915617}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
   m_IsPrefabParent: 0
@@ -8443,6 +8932,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -8496,6 +8989,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -8707,6 +9204,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -8761,19 +9262,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
+    m_Font: {fileID: 12800000, guid: 9f093a168ab29e14dbc7d98a8fa1ccb1, type: 3}
+    m_FontSize: 12
+    m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -8781,7 +9282,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Magenta
+  m_Text: M a g e n t a
 --- !u!222 &602688685
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8847,7 +9348,7 @@ GameObject:
   - component: {fileID: 604825077}
   - component: {fileID: 604825076}
   m_Layer: 5
-  m_Name: Blue
+  m_Name: menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8870,7 +9371,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 80, y: 40}
+  m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &604825076
 MonoBehaviour:
@@ -8911,8 +9412,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
+      - m_Target: {fileID: 1893886152}
+        m_MethodName: MainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9015,6 +9516,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -9129,6 +9634,21 @@ Prefab:
       propertyPath: m_Size.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 837309104}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 1633352078}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: Type
+      value: 
+      objectReference: {fileID: 318915617}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
   m_IsPrefabParent: 0
@@ -9328,6 +9848,21 @@ Prefab:
       propertyPath: m_Size.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 837309104}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 1633352078}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: Type
+      value: 
+      objectReference: {fileID: 318915617}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
   m_IsPrefabParent: 0
@@ -9516,7 +10051,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   desp: 0
   theCamera: {fileID: 153883549}
-  player: {fileID: 1893886143}
 --- !u!23 &635990837
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9725,6 +10259,21 @@ Prefab:
       propertyPath: m_Size.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 837309104}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 1633352078}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: Type
+      value: 
+      objectReference: {fileID: 318915617}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
   m_IsPrefabParent: 0
@@ -9893,6 +10442,21 @@ Prefab:
       propertyPath: m_Size.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 837309104}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 1633352078}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: Type
+      value: 
+      objectReference: {fileID: 318915617}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
   m_IsPrefabParent: 0
@@ -9946,6 +10510,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -10060,6 +10628,21 @@ Prefab:
       propertyPath: m_Size.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 837309104}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 1633352078}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: Type
+      value: 
+      objectReference: {fileID: 318915617}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
   m_IsPrefabParent: 0
@@ -10161,6 +10744,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -10214,6 +10801,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -10686,6 +11277,21 @@ Prefab:
       propertyPath: m_Size.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 837309104}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 1633352078}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: Type
+      value: 
+      objectReference: {fileID: 318915617}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
   m_IsPrefabParent: 0
@@ -10963,6 +11569,21 @@ Prefab:
       propertyPath: m_Size.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 837309104}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 1633352078}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: Type
+      value: 
+      objectReference: {fileID: 318915617}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
   m_IsPrefabParent: 0
@@ -11123,6 +11744,21 @@ Prefab:
       propertyPath: m_Size.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 837309104}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 1633352078}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: Type
+      value: 
+      objectReference: {fileID: 318915617}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
   m_IsPrefabParent: 0
@@ -11173,6 +11809,75 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5a75f2afde06ab04a8e1076eb29d2b44, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &756109533
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 756109534}
+  - component: {fileID: 756109536}
+  - component: {fileID: 756109535}
+  m_Layer: 5
+  m_Name: Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &756109534
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 756109533}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2009570976}
+  m_Father: {fileID: 1054621815}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -26.75}
+  m_SizeDelta: {x: 545.5, y: 40.37}
+  m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &756109535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 756109533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &756109536
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 756109533}
 --- !u!4 &757379751 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -11390,6 +12095,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -11477,6 +12186,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -11530,6 +12243,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -11860,6 +12577,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -11908,6 +12629,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -12128,6 +12853,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -12342,19 +13071,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 9f093a168ab29e14dbc7d98a8fa1ccb1, type: 3}
     m_FontSize: 14
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -12362,7 +13091,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Cyan
+  m_Text: C y a n
 --- !u!222 &831314541
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12481,6 +13210,76 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b48e54fba33dbd74da8d612b4e5a04cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &837309104
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 837309105}
+  - component: {fileID: 837309107}
+  - component: {fileID: 837309106}
+  m_Layer: 5
+  m_Name: Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &837309105
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 837309104}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1782429979}
+  - {fileID: 1633352077}
+  m_Father: {fileID: 33612598}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 360, y: 113.899994}
+  m_Pivot: {x: 1, y: 0}
+--- !u!114 &837309106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 837309104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.684}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &837309107
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 837309104}
 --- !u!1 &837530799
 GameObject:
   m_ObjectHideFlags: 0
@@ -12738,19 +13537,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 9f093a168ab29e14dbc7d98a8fa1ccb1, type: 3}
     m_FontSize: 14
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -12758,7 +13557,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Azul
+  m_Text: A z u l
 --- !u!222 &864886423
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12927,6 +13726,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -13200,6 +14003,21 @@ Prefab:
       propertyPath: m_Size.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 837309104}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 1633352078}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: Type
+      value: 
+      objectReference: {fileID: 318915617}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
   m_IsPrefabParent: 0
@@ -13258,6 +14076,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -13372,6 +14194,21 @@ Prefab:
       propertyPath: m_Size.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 837309104}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 1633352078}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: Type
+      value: 
+      objectReference: {fileID: 318915617}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
   m_IsPrefabParent: 0
@@ -13426,6 +14263,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -13479,6 +14320,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -13774,19 +14619,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 9f093a168ab29e14dbc7d98a8fa1ccb1, type: 3}
     m_FontSize: 14
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -13794,7 +14639,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Rojo
+  m_Text: R o j o
 --- !u!222 &916894086
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13851,6 +14696,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -13979,6 +14828,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -14459,6 +15312,21 @@ Prefab:
       propertyPath: m_Size.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 837309104}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 1633352078}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: Type
+      value: 
+      objectReference: {fileID: 318915617}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
   m_IsPrefabParent: 0
@@ -14572,6 +15440,21 @@ Prefab:
       propertyPath: m_Size.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 837309104}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 1633352078}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: Type
+      value: 
+      objectReference: {fileID: 318915617}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
   m_IsPrefabParent: 0
@@ -14680,6 +15563,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -14968,9 +15855,87 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &1022044799
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1022044800}
+  - component: {fileID: 1022044802}
+  - component: {fileID: 1022044801}
+  m_Layer: 5
+  m_Name: Perdiste
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1022044800
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1022044799}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1467550630}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0.0000076293945, y: -4.3}
+  m_SizeDelta: {x: 393.3, y: 83.2}
+  m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &1022044801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1022044799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 94aed94c33839ad4b8df5fdf7d583839, type: 3}
+    m_FontSize: 25
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 87
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "\xA1 Perdiste !"
+--- !u!222 &1022044802
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1022044799}
 --- !u!1001 &1027928020
 Prefab:
   m_ObjectHideFlags: 0
@@ -15068,6 +16033,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -15357,6 +16326,21 @@ Prefab:
       propertyPath: m_Size.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 837309104}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 1633352078}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: Type
+      value: 
+      objectReference: {fileID: 318915617}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
   m_IsPrefabParent: 0
@@ -15410,6 +16394,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -15553,7 +16541,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2009570976}
+  - {fileID: 756109534}
   - {fileID: 561196140}
   - {fileID: 472196813}
   - {fileID: 1638819927}
@@ -15650,6 +16638,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -15982,6 +16974,21 @@ Prefab:
       propertyPath: m_Size.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 837309104}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 1633352078}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: Type
+      value: 
+      objectReference: {fileID: 318915617}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
   m_IsPrefabParent: 0
@@ -16120,6 +17127,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -16233,6 +17244,21 @@ Prefab:
       propertyPath: m_Size.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 837309104}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 1633352078}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: Type
+      value: 
+      objectReference: {fileID: 318915617}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
   m_IsPrefabParent: 0
@@ -16356,6 +17382,21 @@ Prefab:
       propertyPath: m_Size.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 837309104}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 1633352078}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: Type
+      value: 
+      objectReference: {fileID: 318915617}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
   m_IsPrefabParent: 0
@@ -16625,6 +17666,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -16726,6 +17771,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -16778,6 +17827,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -16923,6 +17976,21 @@ Prefab:
       propertyPath: m_Name
       value: NPC (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 837309104}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 1633352078}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: Type
+      value: 
+      objectReference: {fileID: 318915617}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
   m_IsPrefabParent: 0
@@ -17093,6 +18161,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -17151,6 +18223,75 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_PrefabInternal: {fileID: 1390072480}
+--- !u!1 &1174778577
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1174778578}
+  - component: {fileID: 1174778580}
+  - component: {fileID: 1174778579}
+  m_Layer: 5
+  m_Name: Panel (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1174778578
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1174778577}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1967240576}
+  m_Father: {fileID: 480846304}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -26.75}
+  m_SizeDelta: {x: 545.5, y: 40.37}
+  m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &1174778579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1174778577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1174778580
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1174778577}
 --- !u!4 &1175937560 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -17205,6 +18346,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -17319,6 +18464,21 @@ Prefab:
       propertyPath: m_Size.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 837309104}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 1633352078}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: Type
+      value: 
+      objectReference: {fileID: 318915617}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
   m_IsPrefabParent: 0
@@ -17762,6 +18922,21 @@ Prefab:
       propertyPath: m_Size.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 837309104}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 1633352078}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: Type
+      value: 
+      objectReference: {fileID: 318915617}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
   m_IsPrefabParent: 0
@@ -17885,6 +19060,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -17933,6 +19112,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -17988,6 +19171,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -18123,6 +19310,21 @@ Prefab:
       propertyPath: m_Size.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 837309104}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 1633352078}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: Type
+      value: 
+      objectReference: {fileID: 318915617}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
   m_IsPrefabParent: 0
@@ -18289,6 +19491,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -18342,6 +19548,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -18617,6 +19827,128 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1269571747}
+--- !u!1 &1272360250
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1272360251}
+  - component: {fileID: 1272360254}
+  - component: {fileID: 1272360253}
+  - component: {fileID: 1272360252}
+  m_Layer: 5
+  m_Name: Reintentar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1272360251
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1272360250}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1520235157}
+  m_Father: {fileID: 1791773581}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 120, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1272360252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1272360250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.83418036, g: 0.9132189, b: 1, a: 1}
+    m_PressedColor: {r: 0.6691177, g: 0.6691177, b: 0.6691177, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1272360253}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1893886152}
+        m_MethodName: ResetScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &1272360253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1272360250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1272360254
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1272360250}
 --- !u!1001 &1272548785
 Prefab:
   m_ObjectHideFlags: 0
@@ -18714,6 +20046,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -18859,6 +20195,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -18912,6 +20252,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -19033,6 +20377,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -19100,6 +20448,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -19148,6 +20500,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -19406,6 +20762,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -19635,6 +20995,21 @@ Prefab:
       propertyPath: m_Size.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 837309104}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 1633352078}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: Type
+      value: 
+      objectReference: {fileID: 318915617}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
   m_IsPrefabParent: 0
@@ -19801,6 +21176,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -19858,6 +21237,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -20323,6 +21706,12 @@ Prefab:
       propertyPath: m_RootOrder
       value: 47
       objectReference: {fileID: 0}
+    - target: {fileID: 114043762473272886, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: particle
+      value: 
+      objectReference: {fileID: 1598650681298310, guid: f0249d7ccc2f8f347a8d0507aa24cbce,
+        type: 2}
     - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
         type: 2}
       propertyPath: target
@@ -20345,15 +21734,6 @@ Prefab:
       objectReference: {fileID: 1796079753}
     - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
         type: 2}
-      propertyPath: stop
-      value: 
-      objectReference: {fileID: 1457912818}
-    - target: {fileID: 1209822207781242, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
-      propertyPath: m_Name
-      value: NPC (47)
-      objectReference: {fileID: 0}
-    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
-        type: 2}
       propertyPath: cTarget3
       value: 
       objectReference: {fileID: 1058229090}
@@ -20362,38 +21742,30 @@ Prefab:
       propertyPath: cTarget4
       value: 
       objectReference: {fileID: 1066451457}
-    - target: {fileID: 54850564825559526, guid: aa9292605ec082f49b9e8ebf0345b49e,
-        type: 2}
-      propertyPath: m_Mass
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
         type: 2}
       propertyPath: player
       value: 
       objectReference: {fileID: 1893886151}
-    - target: {fileID: 114043762473272886, guid: aa9292605ec082f49b9e8ebf0345b49e,
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
         type: 2}
-      propertyPath: theParticle
+      propertyPath: messagePanel
       value: 
-      objectReference: {fileID: 1598650681298310, guid: f0249d7ccc2f8f347a8d0507aa24cbce,
+      objectReference: {fileID: 837309104}
+    - target: {fileID: 1209822207781242, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
+      propertyPath: m_Name
+      value: NPC (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
         type: 2}
-    - target: {fileID: 114043762473272886, guid: aa9292605ec082f49b9e8ebf0345b49e,
-        type: 2}
-      propertyPath: particle
+      propertyPath: messageText
       value: 
-      objectReference: {fileID: 1598650681298310, guid: f0249d7ccc2f8f347a8d0507aa24cbce,
+      objectReference: {fileID: 1633352078}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
         type: 2}
-    - target: {fileID: 65363276226123378, guid: aa9292605ec082f49b9e8ebf0345b49e,
-        type: 2}
-      propertyPath: m_Size.x
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 65363276226123378, guid: aa9292605ec082f49b9e8ebf0345b49e,
-        type: 2}
-      propertyPath: m_Size.z
-      value: 5
-      objectReference: {fileID: 0}
+      propertyPath: Type
+      value: 
+      objectReference: {fileID: 318915617}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
   m_IsPrefabParent: 0
@@ -20442,6 +21814,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -20629,6 +22005,21 @@ Prefab:
       propertyPath: m_Size.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 837309104}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 1633352078}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: Type
+      value: 
+      objectReference: {fileID: 318915617}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
   m_IsPrefabParent: 0
@@ -20795,6 +22186,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -20848,6 +22243,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -20954,6 +22353,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -21054,6 +22457,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -21267,6 +22674,21 @@ Prefab:
       propertyPath: m_Size.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 837309104}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 1633352078}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: Type
+      value: 
+      objectReference: {fileID: 318915617}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
   m_IsPrefabParent: 0
@@ -21380,6 +22802,21 @@ Prefab:
       propertyPath: m_Size.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 837309104}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 1633352078}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: Type
+      value: 
+      objectReference: {fileID: 318915617}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
   m_IsPrefabParent: 0
@@ -21534,6 +22971,21 @@ Prefab:
       propertyPath: m_Size.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 837309104}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 1633352078}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: Type
+      value: 
+      objectReference: {fileID: 318915617}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
   m_IsPrefabParent: 0
@@ -21584,6 +23036,75 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5a75f2afde06ab04a8e1076eb29d2b44, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1467550629
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1467550630}
+  - component: {fileID: 1467550632}
+  - component: {fileID: 1467550631}
+  m_Layer: 5
+  m_Name: Panel (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1467550630
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1467550629}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1022044800}
+  m_Father: {fileID: 1791773581}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -26.75}
+  m_SizeDelta: {x: 545.5, y: 40.37}
+  m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &1467550631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1467550629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1467550632
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1467550629}
 --- !u!1001 &1468142864
 Prefab:
   m_ObjectHideFlags: 0
@@ -21634,6 +23155,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -21847,6 +23372,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -22081,6 +23610,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -22194,6 +23727,21 @@ Prefab:
       propertyPath: m_Size.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 837309104}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 1633352078}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: Type
+      value: 
+      objectReference: {fileID: 318915617}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
   m_IsPrefabParent: 0
@@ -22264,6 +23812,80 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5a75f2afde06ab04a8e1076eb29d2b44, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1520235156
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1520235157}
+  - component: {fileID: 1520235159}
+  - component: {fileID: 1520235158}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1520235157
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1520235156}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1272360251}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1520235158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1520235156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 9f093a168ab29e14dbc7d98a8fa1ccb1, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: R e i n t e n t a r
+--- !u!222 &1520235159
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1520235156}
 --- !u!4 &1521999845 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4731602213158146, guid: aa9292605ec082f49b9e8ebf0345b49e,
@@ -22356,6 +23978,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -22409,6 +24035,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -22523,6 +24153,21 @@ Prefab:
       propertyPath: m_Size.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 837309104}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 1633352078}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: Type
+      value: 
+      objectReference: {fileID: 318915617}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
   m_IsPrefabParent: 0
@@ -23054,6 +24699,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -23108,6 +24757,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -23161,6 +24814,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -23398,6 +25055,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -23482,6 +25143,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -23597,6 +25262,21 @@ Prefab:
       propertyPath: m_Size.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 837309104}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 1633352078}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: Type
+      value: 
+      objectReference: {fileID: 318915617}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
   m_IsPrefabParent: 0
@@ -23697,6 +25377,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -24166,6 +25850,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -24240,6 +25928,80 @@ Transform:
   m_PrefabParentObject: {fileID: 4731602213158146, guid: aa9292605ec082f49b9e8ebf0345b49e,
     type: 2}
   m_PrefabInternal: {fileID: 346154743}
+--- !u!1 &1633352076
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1633352077}
+  - component: {fileID: 1633352079}
+  - component: {fileID: 1633352078}
+  m_Layer: 5
+  m_Name: Message
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1633352077
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1633352076}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 837309105}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: -0.000015258789, y: 0}
+  m_SizeDelta: {x: 195.6, y: 59.2}
+  m_Pivot: {x: 0.5, y: 0}
+--- !u!114 &1633352078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1633352076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Hola, Soy Andres...\n\xA1 Ayudaaa !"
+--- !u!222 &1633352079
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1633352076}
 --- !u!4 &1636952208 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -24809,6 +26571,21 @@ Prefab:
       propertyPath: m_Size.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 837309104}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 1633352078}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: Type
+      value: 
+      objectReference: {fileID: 318915617}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
   m_IsPrefabParent: 0
@@ -24982,16 +26759,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 9f093a168ab29e14dbc7d98a8fa1ccb1, type: 3}
     m_FontSize: 14
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
@@ -25001,7 +26778,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Men\xFA Principal"
+  m_Text: "M e n u  \nP r i n c i p a l"
 --- !u!222 &1669582794
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -25384,6 +27161,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -25479,6 +27260,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -25690,6 +27475,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -25838,6 +27627,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -25891,6 +27684,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -26146,6 +27943,21 @@ Prefab:
       propertyPath: m_Size.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 837309104}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 1633352078}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: Type
+      value: 
+      objectReference: {fileID: 318915617}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
   m_IsPrefabParent: 0
@@ -26154,6 +27966,75 @@ Transform:
   m_PrefabParentObject: {fileID: 4731602213158146, guid: aa9292605ec082f49b9e8ebf0345b49e,
     type: 2}
   m_PrefabInternal: {fileID: 1251256939}
+--- !u!1 &1782429978
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1782429979}
+  - component: {fileID: 1782429981}
+  - component: {fileID: 1782429980}
+  m_Layer: 5
+  m_Name: Panel (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1782429979
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1782429978}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 318915616}
+  m_Father: {fileID: 837309105}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -150.82, y: 96.13}
+  m_SizeDelta: {x: 192, y: 28.8}
+  m_Pivot: {x: 1, y: 0}
+--- !u!114 &1782429980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1782429978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1782429981
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1782429978}
 --- !u!1 &1784045111
 GameObject:
   m_ObjectHideFlags: 0
@@ -26266,6 +28147,76 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b48e54fba33dbd74da8d612b4e5a04cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1791773580
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1791773581}
+  - component: {fileID: 1791773583}
+  - component: {fileID: 1791773582}
+  m_Layer: 5
+  m_Name: Blur Perdiste
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1791773581
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1791773580}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1467550630}
+  - {fileID: 1272360251}
+  m_Father: {fileID: 33612598}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1791773582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1791773580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 2100000, guid: e43ee55638fa2ba489324b3c8c9b206b, type: 2}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1791773583
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1791773580}
 --- !u!1 &1796079751
 GameObject:
   m_ObjectHideFlags: 0
@@ -26419,6 +28370,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -26476,6 +28431,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -26590,6 +28549,21 @@ Prefab:
       propertyPath: m_Size.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 837309104}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 1633352078}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: Type
+      value: 
+      objectReference: {fileID: 318915617}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
   m_IsPrefabParent: 0
@@ -26817,80 +28791,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b48e54fba33dbd74da8d612b4e5a04cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1826479432
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1826479433}
-  - component: {fileID: 1826479435}
-  - component: {fileID: 1826479434}
-  m_Layer: 5
-  m_Name: Color Store text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1826479433
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1826479432}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 480846304}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -35.6}
-  m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0.5, y: 1}
---- !u!114 &1826479434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1826479432}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 25
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 2
-    m_MaxSize: 87
-    m_Alignment: 1
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "\xA1 Ganaste !"
---- !u!222 &1826479435
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1826479432}
 --- !u!1001 &1826859567
 Prefab:
   m_ObjectHideFlags: 0
@@ -27101,6 +29001,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -27154,6 +29058,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -27263,6 +29171,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -27801,6 +29713,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -27854,6 +29770,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -27956,6 +29876,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4615a8ec94ffc8040a4a94b0ed2490c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  loser: {fileID: 1791773580}
   health: 100
   currentHealth: 0
   healthSlider: {fileID: 1277503364}
@@ -28010,6 +29931,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -28063,6 +29988,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -28229,6 +30158,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -28469,6 +30402,21 @@ Prefab:
       propertyPath: m_Size.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 837309104}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 1633352078}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: Type
+      value: 
+      objectReference: {fileID: 318915617}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
   m_IsPrefabParent: 0
@@ -28629,6 +30577,21 @@ Prefab:
       propertyPath: m_Size.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 837309104}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 1633352078}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: Type
+      value: 
+      objectReference: {fileID: 318915617}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
   m_IsPrefabParent: 0
@@ -28999,6 +30962,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -29112,6 +31079,21 @@ Prefab:
       propertyPath: m_Size.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 837309104}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 1633352078}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: Type
+      value: 
+      objectReference: {fileID: 318915617}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
   m_IsPrefabParent: 0
@@ -29316,6 +31298,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -29429,6 +31415,21 @@ Prefab:
       propertyPath: m_Size.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 837309104}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 1633352078}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: Type
+      value: 
+      objectReference: {fileID: 318915617}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
   m_IsPrefabParent: 0
@@ -29573,6 +31574,80 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5a75f2afde06ab04a8e1076eb29d2b44, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1967240575
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1967240576}
+  - component: {fileID: 1967240578}
+  - component: {fileID: 1967240577}
+  m_Layer: 5
+  m_Name: Ganaste
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1967240576
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1967240575}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1174778578}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0.0000076293945, y: -4.3}
+  m_SizeDelta: {x: 393.3, y: 83.2}
+  m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &1967240577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1967240575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 94aed94c33839ad4b8df5fdf7d583839, type: 3}
+    m_FontSize: 25
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 87
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "\xA1 Ganaste !"
+--- !u!222 &1967240578
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1967240575}
 --- !u!4 &1970026892 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -29687,6 +31762,21 @@ Prefab:
       propertyPath: m_Size.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 837309104}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 1633352078}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: Type
+      value: 
+      objectReference: {fileID: 318915617}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
   m_IsPrefabParent: 0
@@ -29787,6 +31877,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -29937,17 +32031,17 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2009570975}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1054621815}
+  m_Father: {fileID: 756109534}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -35.6}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 0.0000076293945, y: -4.3}
+  m_SizeDelta: {x: 393.3, y: 83.2}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &2009570977
 MonoBehaviour:
@@ -29961,7 +32055,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -29969,7 +32063,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 94aed94c33839ad4b8df5fdf7d583839, type: 3}
     m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
@@ -29981,7 +32075,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Color Store
+  m_Text: Selecciona Un Color
 --- !u!222 &2009570978
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -30271,6 +32365,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -30324,6 +32422,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -30458,6 +32560,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -30511,6 +32617,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -30741,6 +32851,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -30902,11 +33016,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blurPanel: {fileID: 1054621814}
-  blue: {fileID: 0}
-  red: {fileID: 0}
-  yellow: {fileID: 0}
-  cyan: {fileID: 0}
-  magenta: {fileID: 0}
   ascensor: {fileID: 1715271040}
   desp: 0
 --- !u!23 &2052520813
@@ -31073,6 +33182,21 @@ Prefab:
       propertyPath: m_Size.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 837309104}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 1633352078}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: Type
+      value: 
+      objectReference: {fileID: 318915617}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
   m_IsPrefabParent: 0
@@ -31244,6 +33368,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -31348,6 +33476,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -31471,6 +33603,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -31519,6 +33655,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -31574,6 +33714,10 @@ Prefab:
     - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
       propertyPath: m_Name
       value: Lampara Techo (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
@@ -32520,6 +34664,10 @@ Prefab:
       propertyPath: m_Name
       value: Lampara Techo (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0fce7701e0cbf40a4a6c29148ce6ec, type: 3}
   m_IsPrefabParent: 0
@@ -32633,6 +34781,21 @@ Prefab:
       propertyPath: m_Size.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messagePanel
+      value: 
+      objectReference: {fileID: 837309104}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: messageText
+      value: 
+      objectReference: {fileID: 1633352078}
+    - target: {fileID: 114057789586696366, guid: aa9292605ec082f49b9e8ebf0345b49e,
+        type: 2}
+      propertyPath: Type
+      value: 
+      objectReference: {fileID: 318915617}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa9292605ec082f49b9e8ebf0345b49e, type: 2}
   m_IsPrefabParent: 0

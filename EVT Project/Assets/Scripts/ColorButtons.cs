@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ColorButtons : MonoBehaviour {
-
+    // Cambia de Color en la Posición de la mochila de colores en la que esté en el momento tras ser llamada esta función mediante el botón correspondiente
+    // Puede ser seleccionado el azul, cyan, amarillo, magenta y rojo
     public void SetBlue()
     {
-        PlayerMech.colorBag[PlayerMech.bagPosition] = Color.blue;
+        PlayerMech.colorBag[PlayerMech.bagPosition] = Color.blue; 
     }
 
     public void SetRed()

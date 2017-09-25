@@ -5,27 +5,15 @@ using UnityEngine;
 public class CameraRotationTrigger : MonoBehaviour {
 	public float desp;
 	bool movimiento;
-	public GameObject theCamera, player;
-	public static int rotateID = 1;
+	public GameObject theCamera;
 
 
 	void Update()
 	{
-		
-		if (Input.GetKeyDown (KeyCode.RightArrow) && !movimiento) 
-		{
-				desp = -0.5f;
-				StartCoroutine ("Desplazar");
-		}
-
-		if (Input.GetKeyDown (KeyCode.LeftArrow) && !movimiento) 
-		{
-				desp = 0.5f;
-				StartCoroutine ("Desplazar");
-		}
+        RotationControl();
 	}
 
-	IEnumerator Desplazar()
+	IEnumerator Desplazar() // Corrutina de desplazamiento de la cámara
 	{
 		for (int i = 0; i < 180; i++) {
 			movimiento = true;
@@ -37,9 +25,23 @@ public class CameraRotationTrigger : MonoBehaviour {
 		}
 	}
 
-	void Rotation()
+	void Rotation() //Rotación de la CámaraS
 	{
-		print ("Rotacion");
 		theCamera.transform.eulerAngles += new Vector3(0f,desp,0f);
 	}
+
+    void RotationControl()
+    {
+        if (Input.GetKeyDown(KeyCode.RightArrow) && !movimiento)
+        {
+            desp = -0.5f; // Rotación a la derecha
+            StartCoroutine("Desplazar");
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftArrow) && !movimiento)
+        {
+            desp = 0.5f; // Rotación a la izquierda
+            StartCoroutine("Desplazar");
+        }
+    }
 }

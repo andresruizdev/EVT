@@ -41,7 +41,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1209822207781242}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 84.95816, y: -41.770306, z: -76.37375}
+  m_LocalPosition: {x: 84.95816, y: -86.87031, z: -76.37375}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -159,6 +159,7 @@ MonoBehaviour:
   player: {fileID: 0}
   npc: {fileID: 195363282117485228}
   updateDelay: 0.3
+  messagePanel: {fileID: 0}
 --- !u!195 &195363282117485228
 NavMeshAgent:
   m_ObjectHideFlags: 1
