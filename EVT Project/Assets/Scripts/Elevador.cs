@@ -14,13 +14,23 @@ public class Elevador : MonoBehaviour
 	{
 		if (other.tag == "Player") 
 		{
-			print ("Collider");
 			other.transform.SetParent (ascensor); 
 		}
 	}
 
-	// Volver al Personaje indepentiente tras detectar que deja de Colisionar con la plataforma
-	void OnTriggerExit(Collider other)
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            if (Input.GetKeyDown(KeyCode.RightControl))
+            {
+
+            }
+        }
+    }
+
+    // Volver al Personaje indepentiente tras detectar que deja de Colisionar con la plataforma
+    void OnTriggerExit(Collider other)
 	{
 		if (other.tag == "Player") 
 		{
