@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Elevador : MonoBehaviour
 {
+    public GameObject blurPanel;
+    public Button blue, red, yellow, cyan, magenta;
 	public Transform ascensor;
 	public float desp;
     bool inMovement = false;
@@ -22,9 +25,14 @@ public class Elevador : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            if (Input.GetKeyDown(KeyCode.RightControl))
+            if (Input.GetKeyDown(KeyCode.LeftControl))
             {
+                blurPanel.SetActive(true);
+            }
 
+            if (Input.GetKeyUp(KeyCode.LeftControl))
+            {
+                blurPanel.SetActive(false);
             }
         }
     }
@@ -57,4 +65,6 @@ public class Elevador : MonoBehaviour
 	{
 		ascensor.transform.position += new Vector3(0, desp, 0);
 	}
+
+    
 }

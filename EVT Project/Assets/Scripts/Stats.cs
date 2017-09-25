@@ -5,6 +5,10 @@ using UnityEngine;
 public class Stats
 {
     public static int health;
-    public static int speed;
+
+    public Stats()
+    {
+        health = 500;
+    }
     
 }
