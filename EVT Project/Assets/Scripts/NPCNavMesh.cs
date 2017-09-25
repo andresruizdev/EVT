@@ -8,6 +8,7 @@ public class NPCNavMesh : MonoBehaviour {
     [SerializeField] Transform target, nonTarget, cTarget1, cTarget2, cTarget3, cTarget4, player;
     [SerializeField] NavMeshAgent npc;
     [SerializeField] float updateDelay = .3f;
+    public static int npcNumbers = 48;
 
     void Reset()
     {
@@ -92,6 +93,7 @@ public class NPCNavMesh : MonoBehaviour {
     void Deactive()
     {
         gameObject.SetActive(false);
+        npcNumbers--;
     }
 
 }

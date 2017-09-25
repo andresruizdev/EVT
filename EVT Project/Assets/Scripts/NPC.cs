@@ -19,7 +19,6 @@ public class NPC : MonoBehaviour
     public void Start()
     {
         Selector();
-        Stats.health = 100;
     }
 
     void Selector()

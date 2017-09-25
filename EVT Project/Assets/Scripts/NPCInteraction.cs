@@ -13,6 +13,7 @@ public class NPCInteraction : MonoBehaviour
             if (other.transform.localScale.y < 0)
             {
                 other.gameObject.SetActive(false);
+                NPCNavMesh.npcNumbers--;
             }
         }
 

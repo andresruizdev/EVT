@@ -2,13 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Stats
+public class Stats : MonoBehaviour
 {
-    public static int health;
 
-    public Stats()
+    public struct tStats
     {
-        health = 500;
+        public int health;
     }
     
 }

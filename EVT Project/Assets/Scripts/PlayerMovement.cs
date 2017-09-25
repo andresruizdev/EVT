@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public float desp = 0;
 	public bool inMovement;
 	public Rigidbody rb;
+    public GameObject win;
 
 	void Start()
 	{
@@ -33,6 +34,11 @@ public class PlayerMovement : MonoBehaviour
 			print (Elevador.pisos);
             desp = -0.1f;
 			StartCoroutine ("Desplazamiento");
+            if (Elevador.pisos == 0 && NPCNavMesh.npcNumbers == 0)
+            {
+                inMovement = true;
+                win.SetActive(true);
+            }
         }
         if (transform.parent == ev && Input.GetKeyDown(KeyCode.UpArrow) && !inMovement && Elevador.pisos < 15) 
 		{
