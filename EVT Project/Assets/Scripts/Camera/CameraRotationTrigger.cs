@@ -25,14 +25,14 @@ public class CameraRotationTrigger : MonoBehaviour {
 		}
 	}
 
-	void Rotation() //Rotación de la CámaraS
+	void Rotation() //Rotación de la Cámara
 	{
 		theCamera.transform.eulerAngles += new Vector3(0f,desp,0f);
 	}
 
     void RotationControl()
     {
-        if (Input.GetKeyDown(KeyCode.RightArrow) && !movimiento)
+        if (Input.GetKeyDown(KeyCode.RightArrow) &&! movimiento)
         {
             desp = -0.5f; // Rotación a la derecha
             StartCoroutine("Desplazar");

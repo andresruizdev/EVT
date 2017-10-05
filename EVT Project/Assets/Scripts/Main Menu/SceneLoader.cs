@@ -18,8 +18,10 @@ public class SceneLoader : MonoBehaviour {
     IEnumerator LoadAsynchronously (int SceneIndex)
     {
         AsyncOperation operation = SceneManager.LoadSceneAsync(SceneIndex);
+        print(SceneIndex);
 
         loadingScreen.SetActive(true);
+        loadingImage.SetActive(true);
 
         while (!operation.isDone)
         {
