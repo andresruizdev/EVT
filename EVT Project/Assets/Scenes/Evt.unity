@@ -32677,8 +32677,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loser: {fileID: 1791773580}
-  health: 100
-  currentHealth: 0
   healthSlider: {fileID: 1277503364}
 --- !u!1001 &1894111075
 Prefab:

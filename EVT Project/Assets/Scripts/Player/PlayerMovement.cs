@@ -2,18 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public sealed class PlayerMovement : MonoBehaviour
 {
-	public static float speed = 0.2f;
     public Transform ev;
     public float desp = 0;
 	public bool inMovement;
 	public Rigidbody rb;
     public GameObject win;
+    PlayerSpeedFromStats playerSpeed = new PlayerSpeedFromStats();
 
 	void Start()
 	{
 		rb.GetComponent<Rigidbody>();
+        print(playerSpeed.speed);
 	}
 	void Update () 
 	{
@@ -65,11 +66,11 @@ public class PlayerMovement : MonoBehaviour
         //Movimiento de Izquierda a Derecha
         if (Input.GetKey(KeyCode.A) && !inMovement)
         {
-            rb.MovePosition(transform.position - transform.right * speed);
+            rb.MovePosition(transform.position - transform.right * playerSpeed.speed);
         }
         if (Input.GetKey(KeyCode.D) && !inMovement)
         {
-            rb.MovePosition(transform.position + transform.right * speed);
+            rb.MovePosition(transform.position + transform.right * playerSpeed.speed);
         }
 
         // Movimiento de rotacion
@@ -109,4 +110,12 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+}
+
+public sealed class PlayerSpeedFromStats : Stats
+{
+    public PlayerSpeedFromStats()
+    {
+        speed = 0.2f;
+    }
 }
