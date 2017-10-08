@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public sealed class NPC : MonoBehaviour
 {
@@ -31,10 +32,12 @@ public sealed class NPC : MonoBehaviour
             case 0:
                 npcType = NPCType.enemy1;
                 gameObject.GetComponent<Renderer>().material.color = Color.red;
+                EnemyText.enemyCounter[0]++;
                 break;
             case 1:
                 npcType = NPCType.enemy2;
                 gameObject.GetComponent<Renderer>().material.color = Color.yellow;
+                EnemyText.enemyCounter[1]++;
                 break;
             case 2:
                 npcType = NPCType.boy;
@@ -56,11 +59,12 @@ public sealed class NPC : MonoBehaviour
         // Los Enemigos pueden Convertir a los Ciudadanos en Enemigos, estos tienen diferentes caracteristicas, reflejadas a continuacion
         if (other.tag == "NPC" && (gameObject.tag == "Boy" || gameObject.tag == "Girl"))
         {
-            enemyConverter--;
-            if (enemyConverter <= 0)
+            citizenStats.currentHealth -= 5;
+            if (citizenStats.currentHealth <= 0)
             {
                 gameObject.tag = "ConvertedNPC";
                 gameObject.GetComponent<Renderer>().material.color = Color.blue;
+                EnemyText.enemyCounter[2] += 1;
             }
         }
     }
