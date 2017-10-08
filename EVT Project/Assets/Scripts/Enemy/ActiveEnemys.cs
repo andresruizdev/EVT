@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ActiveEnemys : MonoBehaviour {
+public sealed class ActiveEnemys : MonoBehaviour {
     public GameObject[] npc = new GameObject[7];
 	// Use this for initialization
 	void Start ()

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Elevador : MonoBehaviour
+public sealed class Elevador : MonoBehaviour
 {
     public GameObject blurPanel;
 	public Transform ascensor;

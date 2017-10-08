@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
 
-public class NPCNavMesh : MonoBehaviour {
+public sealed class NPCNavMesh : MonoBehaviour {
 
     [SerializeField] Transform target, nonTarget, cTarget1, cTarget2, cTarget3, cTarget4, player;
     [SerializeField] NavMeshAgent npc;

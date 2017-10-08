@@ -5,16 +5,15 @@ using UnityEngine;
 public sealed class PlayerMovement : MonoBehaviour
 {
     public Transform ev;
-    public float desp = 0;
 	public bool inMovement;
 	public Rigidbody rb;
     public GameObject win;
-    PlayerSpeedFromStats playerSpeed = new PlayerSpeedFromStats();
+    PlayerSpeedFromStats playerMovement = new PlayerSpeedFromStats();
 
 	void Start()
 	{
 		rb.GetComponent<Rigidbody>();
-        print(playerSpeed.speed);
+        print(playerMovement.speed);
 	}
 	void Update () 
 	{
@@ -52,13 +51,13 @@ public sealed class PlayerMovement : MonoBehaviour
 	// Cantidad de Transición durante cada repetición de la Corrutina
 	public void Transition()
 	{
-		ev.transform.position += new Vector3(0, desp, 0);
+		ev.transform.position += new Vector3(0, playerMovement.desp, 0);
 	}
 
     // Cantidad de rotacion por cada repeticion de la Corrutina
 	void Rotate()
 	{
-		transform.eulerAngles += new Vector3(0f,desp*2,0f);
+		transform.eulerAngles += new Vector3(0f,playerMovement.desp*2,0f);
 	}
 
     void PlayerMovementControls()
@@ -66,22 +65,22 @@ public sealed class PlayerMovement : MonoBehaviour
         //Movimiento de Izquierda a Derecha
         if (Input.GetKey(KeyCode.A) && !inMovement)
         {
-            rb.MovePosition(transform.position - transform.right * playerSpeed.speed);
+            rb.MovePosition(transform.position - transform.right * playerMovement.speed);
         }
         if (Input.GetKey(KeyCode.D) && !inMovement)
         {
-            rb.MovePosition(transform.position + transform.right * playerSpeed.speed);
+            rb.MovePosition(transform.position + transform.right * playerMovement.speed);
         }
 
         // Movimiento de rotacion
         if (Input.GetKeyDown(KeyCode.Q) && !inMovement)
         {
-            desp = 0.5f;
+            playerMovement.desp = 0.5f;
             StartCoroutine("Rotation");
         }
         if (Input.GetKeyDown(KeyCode.E) && !inMovement)
         {
-            desp = -0.5f;
+            playerMovement.desp = -0.5f;
             StartCoroutine("Rotation");
         }
     }
@@ -93,7 +92,7 @@ public sealed class PlayerMovement : MonoBehaviour
         {
             Elevador.pisos--;
             print(Elevador.pisos);
-            desp = -0.1f;
+            playerMovement.desp = -0.1f;
             StartCoroutine("Desplazamiento");
             if (Elevador.pisos == 0 && NPCNavMesh.npcNumbers == 0)
             {
@@ -105,7 +104,7 @@ public sealed class PlayerMovement : MonoBehaviour
         {
             Elevador.pisos++;
             print(Elevador.pisos);
-            desp = 0.1f;
+            playerMovement.desp = 0.1f;
             StartCoroutine("Desplazamiento");
         }
     }
@@ -117,5 +116,6 @@ public sealed class PlayerSpeedFromStats : Stats
     public PlayerSpeedFromStats()
     {
         speed = 0.2f;
+        desp = 0;
     }
 }

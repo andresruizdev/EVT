@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraRotationTrigger : MonoBehaviour {
-	public float desp;
+    CameraMovement cameraMovement = new CameraMovement();
 	bool movimiento;
 	public GameObject theCamera;
 
@@ -27,21 +27,29 @@ public class CameraRotationTrigger : MonoBehaviour {
 
 	void Rotation() //Rotación de la Cámara
 	{
-		theCamera.transform.eulerAngles += new Vector3(0f,desp,0f);
+		theCamera.transform.eulerAngles += new Vector3(0f,cameraMovement.desp,0f);
 	}
 
     void RotationControl()
     {
         if (Input.GetKeyDown(KeyCode.RightArrow) &&! movimiento)
         {
-            desp = -0.5f; // Rotación a la derecha
+            cameraMovement.desp = -0.5f; // Rotación a la derecha
             StartCoroutine("Desplazar");
         }
 
         if (Input.GetKeyDown(KeyCode.LeftArrow) && !movimiento)
         {
-            desp = 0.5f; // Rotación a la izquierda
+            cameraMovement.desp = 0.5f; // Rotación a la izquierda
             StartCoroutine("Desplazar");
         }
+    }
+}
+
+public sealed class CameraMovement : Stats
+{
+    public CameraMovement()
+    {
+        desp = 0;
     }
 }

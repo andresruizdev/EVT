@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NPC : MonoBehaviour
+public sealed class NPC : MonoBehaviour
 {
+    CitizenStats citizenStats = new CitizenStats();
     public int typeSelector;
     public int enemyConverter;
     // Se Define la estructura de los tipos de NPC
@@ -18,6 +19,7 @@ public class NPC : MonoBehaviour
     public void Start()
     {
         Selector(); // Se llama desde el Start al Selector del tipo de NPC
+        citizenStats.currentHealth = citizenStats.health;
     }
 
     void Selector()
@@ -38,13 +40,13 @@ public class NPC : MonoBehaviour
                 npcType = NPCType.boy;
                 gameObject.GetComponent<Renderer>().material.color = Color.cyan;
                 gameObject.tag = "Boy";
-                enemyConverter = Random.Range(25, 150);
+                citizenStats.currentHealth = Random.Range(25, 150);
                 break;
             case 3:
                 npcType = NPCType.girl;
                 gameObject.GetComponent<Renderer>().material.color = Color.magenta;
                 gameObject.tag = "Girl";
-                enemyConverter = Random.Range(20, 130);
+                citizenStats.currentHealth = Random.Range(20, 130);
                 break;
         }
     }
@@ -61,5 +63,13 @@ public class NPC : MonoBehaviour
                 gameObject.GetComponent<Renderer>().material.color = Color.blue;
             }
         }
+    }
+}
+
+public sealed class CitizenStats : Stats
+{
+    public CitizenStats()
+    {
+        health = 100;
     }
 }

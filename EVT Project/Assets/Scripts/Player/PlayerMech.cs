@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerMech : MonoBehaviour {
+public sealed class PlayerMech : MonoBehaviour {
     public static Color[] colorBag = new Color[2];
     public static int bagPosition = 0;
     public GameObject bagColor, bagColor1;

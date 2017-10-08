@@ -16,6 +16,7 @@ TagManager:
   - SavedNPC
   - ConvertedNPC
   - ColorStore
+  - botiquin
   layers:
   - Default
   - TransparentFX
