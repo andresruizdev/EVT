@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraRotationTrigger : MonoBehaviour {
+public sealed class CameraRotationTrigger : MonoBehaviour {
     CameraMovement cameraMovement = new CameraMovement();
 	bool movimiento;
 	public GameObject theCamera;
@@ -49,7 +49,7 @@ public class CameraRotationTrigger : MonoBehaviour {
 public sealed class CameraMovement : Stats
 {
     public CameraMovement()
-    {
+    {// Hereda desp
         desp = 0;
     }
 }

@@ -7,12 +7,12 @@ public sealed class BotiquinMovement : MonoBehaviour {
     int despControl;
 	void Update()
     {
-        StartCoroutine("Movement");
+        StartCoroutine("Movement"); // Se inicia desde que se cambia de escena el movimiento del botiquin
 	}
 
     IEnumerator Movement()
     {
-        transform.Rotate(new Vector3(0, botiquinStats.speed, 0));        
+        transform.Rotate(new Vector3(0, botiquinStats.speed, 0));  // Corrutina con el movimiento del botiquin (Solo rotacion)      
         yield return null;
     }
 }
@@ -20,7 +20,6 @@ public sealed class BotiquinStats : Stats
 {
     public BotiquinStats()
     {
-        speed = 2f;
         desp = 0.01f;
     }
 }

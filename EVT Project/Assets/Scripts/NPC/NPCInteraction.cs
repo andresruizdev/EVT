@@ -21,6 +21,18 @@ public sealed class NPCInteraction : MonoBehaviour
                 if (enemyStats.currentHealth <= 100)
                 {
                     other.gameObject.SetActive(false);
+                    if (other.GetComponent<Renderer>().material.color == Color.red)
+                    {
+                        EnemyText.enemyCounter[0] -= 1;
+                    }
+                    else if (other.GetComponent<Renderer>().material.color == Color.yellow)
+                    {
+                        EnemyText.enemyCounter[1] -= 1;
+                    }
+                    else if (other.GetComponent<Renderer>().material.color == Color.blue)
+                    {
+                        EnemyText.enemyCounter[2] -= 1;
+                    }
                 }
                 NPCNavMesh.npcNumbers--; // Se disminuye el número de NPC que infuirá al final para poder ganar
             }

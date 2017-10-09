@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class EnemyText : MonoBehaviour {
+public sealed class EnemyText : MonoBehaviour {
     [SerializeField] Text[] enemyText = new Text[3];
     public static int[] enemyCounter = new int[3];
     
-	
-	// Update is called once per frame
+	//Actualiza cantidad de enemgios
 	void Update ()
     {
         enemyText[0].text = enemyCounter[0].ToString();

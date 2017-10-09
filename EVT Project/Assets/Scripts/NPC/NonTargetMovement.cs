@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NonTargetMovement : MonoBehaviour {
+public sealed class NonTargetMovement : MonoBehaviour {
     int nextTarget;
     void Start()
     {

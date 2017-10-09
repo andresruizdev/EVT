@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ButtonsManager : MonoBehaviour {
+public sealed class ButtonsManager : MonoBehaviour {
     [SerializeField] GameObject infoPanel;
     // Cambia de Color en la Posición de la mochila de colores en la que esté en el momento tras ser llamada esta función mediante el botón correspondiente
     // Puede ser seleccionado el azul, cyan, amarillo, magenta y rojo

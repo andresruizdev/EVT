@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class SceneLoader : MonoBehaviour {
+public sealed class SceneLoader : MonoBehaviour {
 
     public GameObject loadingScreen,loadingImage;
     public Slider slider;

@@ -25,7 +25,7 @@ public sealed class PlayerMech : MonoBehaviour {
 	{
 		if (other.tag == "Piso" && Input.GetKey(KeyCode.Space)) 
 		{
-			other.GetComponent<Renderer> ().material.color = colorBag[0];
+			other.GetComponent<Renderer> ().material.color = colorBag[bagPosition];
 		}
 	}
 
@@ -106,9 +106,10 @@ public sealed class PlayerMech : MonoBehaviour {
 
     void ChangingColor() // Contiene la funcion para cambiar el color primario por el secundaro y viceversa
     {
-        Color aux = colorBag[0];
-        colorBag[0] = colorBag[1];
-        colorBag[1] = aux;
+        GameObject auxG = bagColor;
+        bagColor = bagColor1;
+        bagColor1 = auxG;
+        print(auxG.name);
     }
 
     void BagControls() // Contiene los controles para cambiar los colores en las casillas de la mochila 

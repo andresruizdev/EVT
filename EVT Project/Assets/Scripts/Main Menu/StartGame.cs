@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StartGame : MonoBehaviour {
+public sealed class StartGame : MonoBehaviour {
     public Transform theCamera;
 
     void LateUpdate()// Realiza movimiento rotatorio en el Menu principal

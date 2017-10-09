@@ -7,10 +7,10 @@ public sealed class Info : MonoBehaviour {
 
 	void Start ()
     {
-        Invoke("ActivePanel", 1f);
+        Invoke("ActivePanel", 1f); // Se activa el panel a un segundo de iniciar el juego
 	}
 
-    void ActivePanel()
+    void ActivePanel()// Activa panel de informacion (Controles e Instrucciones)
     {
         infoPanel.SetActive(true);
     }
