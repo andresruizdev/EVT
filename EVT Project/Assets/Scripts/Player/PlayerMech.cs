@@ -52,8 +52,6 @@ public sealed class PlayerMech : MonoBehaviour {
             colorBag[0] = Color.yellow;
             colorBag[1] = Color.magenta;
         }
-        print("Color 1: " + colorBag[0]);
-        print("Color 2:" + colorBag[1]);
     }
 
     void BagColorsUI1()
@@ -109,7 +107,6 @@ public sealed class PlayerMech : MonoBehaviour {
         GameObject auxG = bagColor;
         bagColor = bagColor1;
         bagColor1 = auxG;
-        print(auxG.name);
     }
 
     void BagControls() // Contiene los controles para cambiar los colores en las casillas de la mochila 

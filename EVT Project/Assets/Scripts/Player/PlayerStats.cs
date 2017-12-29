@@ -37,19 +37,16 @@ public sealed class PlayerStats : MonoBehaviour
             {
                 playerStats.currentHealth += 10;
                 MaxLimit();
-                print(playerStats.currentHealth);
             }
             else if (cantidadSalud == 2)
             {
                 playerStats.currentHealth += 5;
                 MaxLimit();
-                print(playerStats.currentHealth);
             }
             else if (cantidadSalud == 3)
             {
                 playerStats.currentHealth += 2;
                 MaxLimit();
-                print(playerStats.currentHealth);
             }
             Destroy(other.gameObject);
         }

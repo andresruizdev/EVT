@@ -5,6 +5,7 @@ using UnityEngine;
 public sealed class NPCInteraction : MonoBehaviour
 {
     EnemyStats enemyStats = new EnemyStats();
+    public static int enemyDeath = 1;
     void Start()
     {
         enemyStats.currentHealth = enemyStats.health;        
@@ -20,7 +21,6 @@ public sealed class NPCInteraction : MonoBehaviour
             {
                 if (enemyStats.currentHealth <= 100)
                 {
-                    other.gameObject.SetActive(false);
                     if (other.GetComponent<Renderer>().material.color == Color.red)
                     {
                         EnemyText.enemyCounter[0] -= 1;

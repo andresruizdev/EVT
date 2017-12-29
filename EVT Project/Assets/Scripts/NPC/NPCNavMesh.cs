@@ -11,6 +11,7 @@ public sealed class NPCNavMesh : MonoBehaviour {
     [SerializeField] float updateDelay = .3f;
     [SerializeField] GameObject messagePanel;
     [SerializeField] Text messageText, Type;
+    bool death;
     public static int npcNumbers = 48;
 
     void Reset()
@@ -25,12 +26,15 @@ public sealed class NPCNavMesh : MonoBehaviour {
     void Start()
     {
         SetTarget();// Llamada al metodo de seleccion de objetivo
-        InvokeRepeating("FollowTarget",0f, updateDelay);
+        InvokeRepeating("FollowTarget", 1f, updateDelay);
     }
 
     void FollowTarget()
     {
-        npc.SetDestination(target.position); // Hace que los NPC sigan al objetivo ya establecido por medio de NAV Mesh
+        if (death == false)
+        {
+            npc.SetDestination(target.position); // Hace que los NPC sigan al objetivo ya establecido por medio de NAV Mesh
+        }
     }
 
     void OnTriggerEnter(Collider other)
@@ -57,6 +61,15 @@ public sealed class NPCNavMesh : MonoBehaviour {
                 messageText.text = "Ñommm... Ñomm...";
             }
             messagePanel.SetActive(true);
+        }
+
+        if (other.tag == "Piso" && (gameObject.tag == "NPC" || gameObject.tag == "ConvertedNPC"))
+        {
+            if (other.GetComponent<Renderer>().material.color == gameObject.GetComponent<Renderer>().material.color)
+            {
+                death = true;
+                gameObject.SetActive(false);
+            }
         }
         //Selecciona el tipo de mensaje del npc
         if (other.tag == "Player" && gameObject.tag == "Boy")
@@ -109,6 +122,7 @@ public sealed class NPCNavMesh : MonoBehaviour {
         {
             SetTarget();
             messagePanel.SetActive(false);
+
         }
     }
 
@@ -145,7 +159,6 @@ public sealed class NPCNavMesh : MonoBehaviour {
     {// Verifica si el Ciudadano ya ha sido salvado y lo hace mas pequeño para despues desaparecer
         if (GetComponent<Renderer>().material.color == Color.green)
         {
-            target = player;
             LessScale();
         }
     }
@@ -160,6 +173,7 @@ public sealed class NPCNavMesh : MonoBehaviour {
     void Deactive()
     {// Es llamado en LessScale para desactivar objetos
         gameObject.SetActive(false);
+        death = true;
         npcNumbers--;
     }
 

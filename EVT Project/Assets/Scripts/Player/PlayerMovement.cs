@@ -13,7 +13,6 @@ public sealed class PlayerMovement : MonoBehaviour
 	void Start()
 	{
 		rb.GetComponent<Rigidbody>();
-        print(playerMovement.speed);
 	}
 	void Update () 
 	{
@@ -44,8 +43,6 @@ public sealed class PlayerMovement : MonoBehaviour
 			yield return new WaitForSeconds (0.01f);
 		}
         inMovement = false;
-        print("Entrando");
-
 	}
 
 	// Cantidad de Transición durante cada repetición de la Corrutina
@@ -91,7 +88,6 @@ public sealed class PlayerMovement : MonoBehaviour
         if (transform.parent == ev && Input.GetKeyDown(KeyCode.DownArrow) && !inMovement && Elevador.pisos > 0)
         {
             Elevador.pisos--;
-            print(Elevador.pisos);
             playerMovement.desp = -0.1f;
             StartCoroutine("Desplazamiento");
             if (Elevador.pisos == 0 && NPCNavMesh.npcNumbers == 0)
@@ -103,7 +99,6 @@ public sealed class PlayerMovement : MonoBehaviour
         if (transform.parent == ev && Input.GetKeyDown(KeyCode.UpArrow) && !inMovement && Elevador.pisos < 15)
         {
             Elevador.pisos++;
-            print(Elevador.pisos);
             playerMovement.desp = 0.1f;
             StartCoroutine("Desplazamiento");
         }
